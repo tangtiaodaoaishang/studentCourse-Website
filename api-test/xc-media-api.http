@@ -1,0 +1,9 @@
+### 上传文件(注意该测试不能用于测试上传视频,因为Content-Type不对应)
+POST {{media_host}}/media/upload/coursefile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="filedata"; filename="a1.jpg"
+Content-Type: application/octet-stream
+
+< c:/Users/HP/Downloads/a1.jpg

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 课程发布
+ * 课程预发布
  * </p>
  *
  * @author itcast

@@ -34,7 +34,7 @@
     </properties>
 
 
-    <dependencyManagement>
+<dependencyManagement>
         <dependencies>
 
             <dependency>
@@ -185,7 +185,7 @@
             </dependency>
         </dependencies>
 
-    </dependencyManagement>
+ </dependencyManagement>
 
 
     <build>

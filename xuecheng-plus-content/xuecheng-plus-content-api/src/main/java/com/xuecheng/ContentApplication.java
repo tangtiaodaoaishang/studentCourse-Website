@@ -3,6 +3,7 @@ package com.xuecheng;
 import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author Mr.M
@@ -10,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description 内容管理服务启动类
  * @date 2023/2/11 15:49
  */
+//启动类启动Feign服务注解(basePackages属性值为标注了@FeignClient注解的接口的包路径)
+@EnableFeignClients(basePackages={"com.xuecheng.content.feignclient"})
 @EnableSwagger2Doc
 @SpringBootApplication
 public class ContentApplication {
